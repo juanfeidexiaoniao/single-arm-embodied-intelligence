@@ -1,0 +1,24 @@
+{
+  "policies": {
+    "open_gripper": {
+      "description": "张开机械臂的夹爪，准备抓取或释放物体。",
+      "command": "conda run -n lerobot python lerobot/scripts/eval.py -p act_open_gripper --eval.n_episodes 1"
+    },
+    "close_gripper": {
+      "description": "闭合机械臂的夹爪，用于抓取物体。",
+      "command": "conda run -n lerobot python lerobot/scripts/eval.py -p act_close_gripper --eval.n_episodes 1"
+    },
+    "pick_red_cube": {
+      "description": "将机械臂移动到视野中红色方块的位置，并闭合夹爪将其抓起。",
+      "command": "conda run -n lerobot python lerobot/scripts/eval.py -p act_pick_red --eval.n_episodes 1"
+    },
+    "place_in_box": {
+      "description": "将夹爪中的物体移动到视野中黑色的盒子上方，并张开夹爪将其放入。",
+      "command": "conda run -n lerobot python lerobot/scripts/eval.py -p act_place_box --eval.n_episodes 1"
+    },
+    "go_home": {
+      "description": "将机械臂收回到默认的初始安全位置。",
+      "command": "conda run -n lerobot python lerobot/scripts/eval.py -p act_home_pos --eval.n_episodes 1"
+    }
+  }
+}

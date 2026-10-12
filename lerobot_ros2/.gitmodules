@@ -1,0 +1,6 @@
+[submodule "ros2_robot_interface"]
+	path = submodules/ros2_robot_interface
+	url = https://github.com/fiveages-sim/ros2_robot_interface.git
+[submodule "submodules/lerobot"]
+	path = submodules/lerobot
+	url = https://github.com/huggingface/lerobot.git

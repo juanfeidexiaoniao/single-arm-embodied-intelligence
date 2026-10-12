@@ -1,0 +1,5 @@
+dashscope>=1.14.0
+python-telegram-bot>=20.0
+httpx[socks]>=0.24.0
+PyYAML>=6.0
+opencv-python>=4.8.0
